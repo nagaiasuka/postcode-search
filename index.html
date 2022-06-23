@@ -5,56 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>郵便番号検索</title>
 </head>
 <body>
-    <div id="app">
-        <form>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>郵便番号</th>
-                        <td>
-                            <input id="input" class="postcode" type="text" name="postcode" value="" placeholder="例)8120012">
-                            <button id="search" type="button">住所検索</button>
-                            <p id="error"></p>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <th>都道府県</th>
-                        <td><input id="address1" type="text" name="address1" value=""></td>
-                    </tr>
+    <div id="content">
 
-                    <tr>
-                        <th>都道府県(カナ)</th>
-                        <td><input id="kana1" type="text" name="kana1" value=""></td>
-                    </tr>
+        <div id="app">
+            <form>
+                <h1>郵便番号検索</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>郵便番号</th>
+                            <td>
+                                <input id="input" class="postcode" type="text" name="postcode" value="" placeholder="例)8120012">
+                                <p id="error"></p>
+                                <button id="search" type="button" class="btn-border">検索</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                
+           
+                    
+              
+                    <tbody>
+                        <tr>
+                            <th>都道府県</th>
+                            <td><input id="address1" type="text" name="address1" value=""></td>
+                        </tr>
     
-                    <tr>
-                        <th>市区町村</th>
-                        <td><input id="address2" type="text" name="address2" value=""></td>
-                    </tr>
-
-                    <tr>
-                        <th>市区町村(カナ)</th>
-                        <td><input id="kana2" type="text" name="kana2" value=""></td>
-                    </tr>
+                        <tr>
+                            <th>都道府県(カナ)</th>
+                            <td><input id="kana1" type="text" name="kana1" value=""></td>
+                        </tr>
+        
+                        <tr>
+                            <th>市区町村</th>
+                            <td><input id="address2" type="text" name="address2" value=""></td>
+                        </tr>
     
-                    <tr>
-                        <th>町域</th>
-                        <td><input id="address3" type="text" name="address3" value=""></td>
-                    </tr>
-
-                    <tr>
-                        <th>町域(カナ)</th>
-                        <td><input id="kana3" type="text" name="kana3" value=""></td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-        <!-- 検索結果の表示エリア -->
-        <div id="zip_result"></div>
+                        <tr>
+                            <th>市区町村(カナ)</th>
+                            <td><input id="kana2" type="text" name="kana2" value=""></td>
+                        </tr>
+        
+                        <tr>
+                            <th>町域</th>
+                            <td><input id="address3" type="text" name="address3" value=""></td>
+                        </tr>
+    
+                        <tr>
+                            <th>町域(カナ)</th>
+                            <td><input id="kana3" type="text" name="kana3" value=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 検索結果の表示エリア -->
+                <div id="zip_result"></div>
+            </form>
+        </div>
     </div>
 
     <script src="./app.js"></script>
