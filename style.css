@@ -35,3 +35,7 @@ button.btn-border:hover {
     color: #fff;
     background: #f582ae;
 }
+
+th{
+    padding: 10px;
+}

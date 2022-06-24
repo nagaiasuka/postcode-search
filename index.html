@@ -14,7 +14,7 @@
         <div id="app">
             <form>
                 <h1>郵便番号検索</h1>
-                <table>
+                <!-- <table>
                     <tbody>
                         <tr>
                             <th>郵便番号</th>
@@ -24,13 +24,29 @@
                                 <button id="search" type="button" class="btn-border">検索</button>
                             </td>
                         </tr>
-                        
                     </tbody>
-                
-           
-                    
-              
+                </table> -->
+
+                <table>
                     <tbody>
+                        <tr>
+                            <th>郵便番号</th>
+                            <td>
+                                <input id="input" class="postcode" type="text" name="postcode" value="" placeholder="例)8120012">
+                                <p id="error"></p>
+                           
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th></th>
+                            <td>
+
+                                <button id="search" type="button" class="btn-border">検索</button>
+                            </td>
+                        </tr>
+
                         <tr>
                             <th>都道府県</th>
                             <td><input id="address1" type="text" name="address1" value=""></td>
